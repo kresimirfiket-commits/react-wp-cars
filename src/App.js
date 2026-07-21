@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './App.css';
 
 import Header from "./components/Header";
@@ -12,20 +13,24 @@ import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Car from "./pages/Car";
 
+import { CarsProvider } from "./context/CarsContext";
+
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <CarsProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
 
-          <Route path="/car/:id" element={<Car />} />
-        </Routes>
-        <Footer />
+            <Route path="/car/:id" element={<Car />} />
+          </Routes>
+          <Footer />
+        </CarsProvider>
       </BrowserRouter>
     </>
   );
