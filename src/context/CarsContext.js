@@ -11,7 +11,7 @@ export function CarsProvider({ children }) {
   const [currentPage, setCurrentPage] = useState(0)
 
   useEffect(() => {
-    fetch("https://kmf-plavi.hr/wp-json/wp/v2/posts?per_page=100&_embed")
+    fetch("https://kmf-plavi.hr/backend/wp-json/wp/v2/posts?per_page=100&_embed")
       .then(response => response.json())
       .then(data => {
         setCars(data)

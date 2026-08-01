@@ -5,10 +5,11 @@ footer {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  border-top: 1px solid var(--line);
-  padding: 12px 12px 6px;
+  /*border-top: 1px solid var(--line);*/
+  padding: 10px 12px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--muted);
   background: var(--panel);
 }
@@ -22,10 +23,36 @@ footer .prev {
 footer .next:hover,
 footer .prev:hover {
   color: var(--green);
-  /*text-decoration: none;*/
 }
 
 .footer-span {
+  color: var(--green);
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom p {
+  padding: 2px 12px;
+  border-radius: 4px;
+  margin: 4px 2px;
+
+}
+
+.bottom p:hover {
+  background-color: var(--line);
+}
+
+footer .link {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: var(--green-deep);
+}
+
+footer .link:hover {
   color: var(--green);
 }
 

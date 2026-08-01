@@ -8,7 +8,7 @@ function Car() {
     const wrapRef = useRef(null)
 
     useEffect(() => {
-        fetch('https://kmf-plavi.hr/wp-json/wp/v2/posts/' + id)
+        fetch('https://kmf-plavi.hr/backend/wp-json/wp/v2/posts/' + id)
             .then((output) => output.json())
             .then((data) => setAuto(data))
     }, [id])
@@ -44,7 +44,7 @@ function Car() {
     }
 
     return (
-        <div ref={wrapRef} className="car-wrap" dangerouslySetInnerHTML={{ __html: auto.content.rendered }} />
+        <div ref={wrapRef} className="container-fluid car-wrap" dangerouslySetInnerHTML={{ __html: auto.content.rendered }} />
     )
 }
 

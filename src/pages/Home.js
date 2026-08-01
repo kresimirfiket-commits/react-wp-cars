@@ -4,7 +4,7 @@ import "../css_files/Home.css"
 function Home() {
   return (
     <main class="home">
-      <div class="container-fluid">
+      <div class="container-fluid px-0 px-md-3">
         <div
           class="masthead d-flex align-items-baseline justify-content-between"
         >
@@ -127,10 +127,10 @@ function Home() {
         </section>
 
         <div class="row align-items-center justify-content-between about-strip">
-          <div class="col-2 monodiv">
+          <div class="col-3 col-sm-2 monodiv">
             <div class="monogram">KMF</div>
           </div>
-          <div class="col-10 about-text">
+          <div class="col-9 col-sm-10 about-text">
             <p>
               <strong>Krešimir-Mirko Fiket : </strong> front - end developer and
               the person behind Daily Fast Files. This started as a side project

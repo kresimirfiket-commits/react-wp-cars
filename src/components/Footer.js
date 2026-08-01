@@ -45,20 +45,20 @@ function Footer() {
     return (
       <footer>
         <div className='container-fluid'>
-          <div className='d-flex justify-content-between mb-3'>
+          <div className='row justify-content-between mb-3'>
+            <div className='col-4 d-flex justify-content-start'>
               {prevCar ? (
                 <Link className="prev" to={'/car/' + prevCar.id}>← {prevCar.acf?.car_title || 'Previous'}</Link>
               ) : <span />}
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
               <span className='footer-span'>{currentCar?.acf?.car_title || 'Undefined'}</span>
+            </div>
+            <div className='col-4 d-flex justify-content-end'>
               {nextCar ? (
                 <Link className="next" to={'/car/' + nextCar.id}>{nextCar.acf?.car_title || 'Next'} →</Link>
               ) : <span />}
-          </div>
-          <div className='row'>
-            <p>
-              Daily Fast Files — profiling cars built fast on the same line as the
-              slow ones
-            </p>
+            </div>
           </div>
         </div>
       </footer>
@@ -66,11 +66,31 @@ function Footer() {
   }
 
   return (
-    <footer className="d-flex justify-content-between">
-      <p>
-        Daily Fast Files — profiling cars built fast on the same line as the
-        slow ones
-      </p>
+    <footer>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col bottom'>
+            <p><Link className='link' to="/">Home</Link></p>
+          </div>
+          <div className='col bottom'>
+            <p><Link className='link' to="/catalog">Catalog</Link></p>
+          </div>
+          <div className='col bottom'>
+            <p><Link className='link' to="/about">About</Link> </p>
+          </div>
+          <div className='col bottom'>
+            <p><Link className='link' to="/contact">Contact</Link></p>
+          </div>
+          <div className='col bottom'>
+            <p><Link className='link' to="/privacypolicy">Privacy</Link></p>
+          </div>
+          <div className='col bottom'>
+            <p><a className='link' href="mailto:kresimir.fiket@kmf-plavi.hr">email</a></p>
+          </div>
+        </div>
+
+      </div>
+
     </footer>
   )
 }
