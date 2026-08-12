@@ -16,7 +16,7 @@ function Footer() {
   useEffect(() => {
     let prevScrollpos = window.pageYOffset;
     const handleScroll = () => {
-      if (window.innerWidth > 992) {
+      if (window.innerWidth > 768) {
         setIsHidden(false)
         return
       }

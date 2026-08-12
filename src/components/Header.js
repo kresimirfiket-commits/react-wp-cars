@@ -1,13 +1,30 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from "react-router"
 import "../css_files/Header.css"
 import { useTheme } from '../context/ThemeContext'
 
 function Header() {
     const { theme, toggleTheme } = useTheme()
-    
+    const [isUnseen, setIsUnseen] = useState(false)
+
+    /* When the user scrolls up, hide the footer. When the user scrolls down, show the footer */
+    useEffect(() => {
+        let prevScrollpos = window.pageYOffset;
+        const handleScroll = () => {
+            if (window.innerWidth > 768) {
+                setIsUnseen(false)
+                return
+            }
+            const currentScrollPos = window.pageYOffset;
+            setIsUnseen(prevScrollpos < currentScrollPos)
+            prevScrollpos = currentScrollPos
+        }
+        window.addEventListener("scroll", handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
+
     return (
-        <header>
+        <header className={isUnseen ? 'unseen' : ""}>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">

@@ -8,6 +8,7 @@ header {
   margin-bottom: 36px;
   background: var(--panel);
   border-bottom: 2px solid var(--ink);
+  transition: transform 0.5s;
 }
 
 .navbar.navbar-expand-lg {
@@ -48,4 +49,18 @@ svg:hover {
 
 .navbar .navbar-toggler {
   background-color: var(--green-deep);
+}
+
+/* ---------- class to hide footer ---------- */
+.unseen {
+  transform: translateY(-100%);
+  /*transition-duration: 0.5s;*/
+}
+
+/* ---------- media query ---------- */
+@media (max-width: 576px) {
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
