@@ -5,53 +5,47 @@ header {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  /*border-bottom: 1px solid var(--line);*/
-  /*border-top: none;*/
   margin-bottom: 36px;
   background: var(--panel);
-  /*border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;*/
+  border-bottom: 2px solid var(--ink);
 }
 
-.navbar.navbar-expand-lg{
+.navbar.navbar-expand-lg {
   padding: 0;
 }
 
+.navbar-toggler {
+  padding: 2px 8px;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+}
+
+
 svg {
   fill: var(--green-deep);
+  width: 30px;
+  height: 30px;
 }
 
 svg:hover {
   fill: var(--green);
 }
 
-.navbar a,
-.navbar li a {
+.navbar li .nav-link,
+.navbar li .theme-toggle {
   color: var(--green-deep);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-/*.navbar Link.nav-link.active {
-  color: var(--green);
-}*/
-
-.navbar a.nav-link.disabled {
-  color: var(--muted);
-}
-
-.navbar a:hover,
-.navbar li:hover {
+.navbar li .nav-link:hover,
+.navbar li .theme-toggle:hover {
   color: var(--green);
 }
 
 .navbar .navbar-toggler {
   background-color: var(--green-deep);
-}
-
-/* ---------- media query ---------- */
-@media (max-width: 992px) {
-  header {
-    width: 95%;
-  }
 }

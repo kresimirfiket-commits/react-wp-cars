@@ -162,7 +162,7 @@ h1 {
     var(--amber)
   );
   border-radius: 999px;
-  margin: 0 6px 12px;
+  margin: 0 0 12px;
 }
 .gauge-marker {
   position: absolute;
@@ -385,4 +385,7 @@ footer .next {
   .stat:nth-child(2) {
     border-right: none;
   }
+  .sleeper {
+  padding: 28px;
+}
 }

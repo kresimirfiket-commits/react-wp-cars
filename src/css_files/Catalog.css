@@ -8,10 +8,22 @@ main {
   header {
     width: 95%;
   }
+
   main {
     width: 95%;
   }
+
   footer {
     width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
   }
 }

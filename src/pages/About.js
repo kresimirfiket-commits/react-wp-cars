@@ -4,7 +4,7 @@ import "../css_files/About.css"
 function About() {
   return (
     <main className="about">
-      <div className="container-fluid page">
+      <div className="container-fluid page-about">
         <div
           className="masthead d-flex align-items-baseline justify-content-between"
         >
@@ -25,7 +25,7 @@ function About() {
         <div className="divider"></div>
 
         <section>
-          <p className="section-mono">The person</p>
+          <p className="section-mono-about">The person</p>
           <div className="row align-items-center justify-content-between person">
             <div className="col-0 col-lg-2 d-flex justify-content-center">
               <div className="monogram-large">KMF</div>
@@ -57,7 +57,7 @@ function About() {
         </section>
 
         <section className="school-block">
-          <p className="section-mono">Where it started</p>
+          <p className="section-mono-about">Where it started</p>
           <h3>XV. Gymnasium — MIOC, Zagreb</h3>
           <p>
             XV. Gymnasium — universally known in Croatia by its acronym MIOC
@@ -141,7 +141,7 @@ function About() {
         <div className="divider"></div>
 
         <section className="pivot">
-          <p className="section-mono">The long way round</p>
+          <p className="section-mono-about">The long way round</p>
           <p>
             After MIOC, my academic strengths in mathematics and chemistry led
             me to the Faculty of Food Technology — where both subjects formed
@@ -171,7 +171,7 @@ function About() {
         <div className="divider"></div>
 
         <section className="project-story">
-          <p className="section-mono">This project</p>
+          <p className="section-mono-about">This project</p>
           <p>
             Daily Fast Files needed to be something worth building — not a
             tutorial clone, not a generic blog. Production-line performance cars
@@ -191,7 +191,7 @@ function About() {
         <div className="divider"></div>
 
         <section className="how-built-about">
-          <p className="section-mono">How this was built</p>
+          <p className="section-mono-about">How this was built</p>
           <h2>Generated,<br />not assembled.</h2>
           <p className="how-built-about-intro">
             Every page on this site was written, designed, and deployed as part

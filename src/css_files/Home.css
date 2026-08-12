@@ -2,8 +2,13 @@ main.home {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0 50px;
+  /*padding: 0 0 50px;*/
 }
+
+/*.page-home {
+      margin: 0 auto;
+      padding: 56px 0 80px;
+  }*/
 
 .masthead {
   /*display: flex;
@@ -252,9 +257,9 @@ main.home {
   font-weight: 500;
 }
 
-/*.rules {
-  margin-bottom: 80px;
-}*/
+.rules-home {
+  margin-bottom: 56px;
+}
 
 .rule-row {
   /*display: grid;
@@ -269,14 +274,14 @@ main.home {
   border-top: 1px solid var(--line);
 }
 
-.rule-cell {
+.rule-cell-home {
   padding: 20px 0;
   font-size: 15px;
   line-height: 1.5;
   /*color: var(--paper);*/
 }
 
-.rule-cell:first-child {
+.rule-cell-home:first-child {
   border-right: 1px solid var(--line);
   padding-right: 24px;
   font-family: "IBM Plex Mono", monospace;
@@ -284,17 +289,17 @@ main.home {
   color: var(--amber);
 }
 
-.rule-cell:last-child {
+.rule-cell-home:last-child {
   padding-left: 24px;
   color: var(--muted);
   font-size: 14px;
 }
 
-@media (min-width: 1830px) {
+/*@media (min-width: 1830px) {
   .section-mono {
     padding-right: 24px;
   }
-}
+}*/
 
 @media (max-width: 1400px) {
   main.home {
@@ -311,6 +316,14 @@ main.home {
 }
 
 @media (max-width: 992px) {
+  main.home {
+    padding-bottom: 0;
+  }
+
+  /*.page-home {
+    padding: 0 0 30px;
+  }*/
+
   .hero {
     margin-bottom: 50px;
   }
@@ -340,6 +353,10 @@ main.home {
 
   .how-built p {
     line-height: 1.4;
+  }
+
+  .rules-home {
+    margin-bottom: 56px;
   }
 }
 

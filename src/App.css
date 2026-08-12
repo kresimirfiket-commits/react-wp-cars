@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
 
+/* ---------- Theme variables ---------- */
+
+/* Fallback: applies if no data-theme attribute is set yet (e.g. first paint) */
 :root {
   --ink: #11140f;
   --panel: #181d13;
@@ -9,6 +12,30 @@
   --amber: #e8a33d;
   --paper: #ece8dc;
   --muted: #8b9180;
+}
+
+/* Dark theme (default) */
+[data-theme="dark"] {
+  --ink: #11140f;
+  --panel: #181d13;
+  --line: #2c3622;
+  --green: #6cb72f;
+  --green-deep: #3d7a1f;
+  --amber: #e8a33d;
+  --paper: #ece8dc;
+  --muted: #8b9180;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --ink: #f5f3ec;
+  --panel: #ffffff;
+  --line: #d8d3c2;
+  --green: #4f9a22;
+  --green-deep: #386b1c;
+  --amber: #c97f1c;
+  --paper: #1b1f16;
+  --muted: #6b7160;
 }
 
 * {
@@ -44,12 +71,6 @@ body {
 
 /* ---------- media query ---------- */
 @media (max-width: 1400px) {
-  .car-wrap {
-    width: 95%;
-  }
-}
-
-@media (max-width: 992px) {
   .car-wrap {
     width: 95%;
   }

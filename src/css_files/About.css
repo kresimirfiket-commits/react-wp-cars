@@ -4,7 +4,7 @@
       margin-right: auto;
   }
 
-  /*.page {
+  /*.page-about {
       margin: 0 auto;
       padding: 56px 0 80px;
   }*/
@@ -32,7 +32,7 @@
       color: var(--muted);
   }
 
-  .section-mono {
+  .section-mono-about {
       font-family: 'IBM Plex Mono', monospace;
       font-size: 12px;
       letter-spacing: .14em;
@@ -315,7 +315,7 @@
       border: 1px solid var(--line);
       border-radius: 4px;
       padding: 40px;
-      margin-bottom: 80px;
+      margin-bottom: 56px;
   }
 
   .how-built-about h2 {
@@ -416,8 +416,8 @@
           border-bottom: none;
       }
 
-      .page {
-          padding: 28px 0 30px;
+      .page-about {
+          padding: 0;
       }
 
       .masthead {
@@ -451,7 +451,7 @@
 
       .how-built-about {
           padding: 12px;
-          margin-bottom: 30px;
+          /*margin-bottom: 56px;*/
       }
   }
 

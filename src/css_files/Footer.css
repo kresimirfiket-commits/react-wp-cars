@@ -6,23 +6,13 @@ footer {
   margin-left: auto;
   margin-right: auto;
   /*border-top: 1px solid var(--line);*/
-  padding: 10px 12px;
+  padding: 6px 6px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--muted);
   background: var(--panel);
-}
-
-footer .next,
-footer .prev {
-  color: var(--green-deep);
-  text-decoration: none;
-}
-
-footer .next:hover,
-footer .prev:hover {
-  color: var(--green);
+  border-top: 2px solid var(--ink);
 }
 
 .footer-span {
@@ -39,7 +29,6 @@ footer .prev:hover {
   padding: 2px 12px;
   border-radius: 4px;
   margin: 4px 2px;
-
 }
 
 .bottom p:hover {
@@ -47,13 +36,35 @@ footer .prev:hover {
 }
 
 footer .link {
-  text-decoration: none;
-  letter-spacing: 2px;
-  color: var(--green-deep);
+  /*text-decoration: none;*/
+  letter-spacing: 0.5px;
+  color: var(--muted);
 }
 
 footer .link:hover {
   color: var(--green);
+}
+
+/* ---------- car.id ---------- */
+footer .next,
+footer .prev {
+  color: var(--green-deep);
+  text-decoration: none;
+}
+
+footer .next:hover,
+footer .prev:hover {
+  color: var(--green);
+}
+
+footer .next:focus,
+footer .prev:focus {
+  color: var(--green-deep);
+}
+
+footer .next:active,
+footer .prev:active {
+  color: var(--green-deep);
 }
 
 /* ---------- pagination ---------- */
@@ -88,9 +99,15 @@ footer .pagination-1 .disabled a {
   cursor: default;
 }
 
+/* ---------- class to hide footer ---------- */
+.hidden {
+  transform: translateY(100%);
+}
+
 /* ---------- media query ---------- */
 @media (max-width: 992px) {
-  footer {
-    width: 95%;
-  }
+.bottom p {
+  padding: 2px 2px;
+  margin: 4px 2px;
+}
 }

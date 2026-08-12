@@ -4,7 +4,7 @@ import "../css_files/Home.css"
 function Home() {
   return (
     <main class="home">
-      <div class="container-fluid px-0 px-md-3">
+      <div class="container-fluid page-home">
         <div
           class="masthead d-flex align-items-baseline justify-content-between"
         >
@@ -141,39 +141,39 @@ function Home() {
           </div>
         </div>
 
-        <div class="rules section-mono">
+        <div class="rules-home section-mono-home">
           <p>What qualifies</p>
           <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell">Standard production line</div>
-            <div class="col-8 col-md-6 rule-cell">
+            <div class="col-4 col-md-6 rule-cell-home">Standard production line</div>
+            <div class="col-8 col-md-6 rule-cell-home">
               Built on the same line as the base model, by the same workers, in
               the same factory.
             </div>
           </div>
           <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell">No homologation</div>
-            <div class="col-8 col-md-6 rule-cell">
+            <div class="col-4 col-md-6 rule-cell-home">No homologation</div>
+            <div class="col-8 col-md-6 rule-cell-home">
               Not a limited run built to satisfy a racing regulation. Regular
               production numbers only.
             </div>
           </div>
           <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell">No special orders</div>
-            <div class="col-8 col-md-6 rule-cell">
+            <div class="col-4 col-md-6 rule-cell-home">No special orders</div>
+            <div class="col-8 col-md-6 rule-cell-home">
               Available off the shelf from a main dealer, not configured per
               customer at the factory.
             </div>
           </div>
           <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell">Daily usable</div>
-            <div class="col-8 col-md-6 rule-cell">
+            <div class="col-4 col-md-6 rule-cell-home">Daily usable</div>
+            <div class="col-8 col-md-6 rule-cell-home">
               Full interior, real boot space, five seats where the base model
               has five seats.
             </div>
           </div>
           <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell">Currently manufactured</div>
-            <div class="col-8 col-md-6 rule-cell">
+            <div class="col-4 col-md-6 rule-cell-home">Currently manufactured</div>
+            <div class="col-8 col-md-6 rule-cell-home">
               In production at the time of writing. No classics, no cars that
               have since been discontinued.
             </div>
