@@ -1,16 +1,22 @@
 import { useEffect, useState, useRef } from "react"
 import { useParams } from "react-router"
+import { useLoading } from "../context/LoadingContext"
 import "../css_files/Car.css"
 
 function Car() {
     const { id } = useParams()
     const [auto, setAuto] = useState(null)
     const wrapRef = useRef(null)
+    const { startLoading, completeLoading } = useLoading()
 
     useEffect(() => {
+        startLoading()
         fetch('https://kmf-plavi.hr/backend/wp-json/wp/v2/posts/' + id)
             .then((output) => output.json())
-            .then((data) => setAuto(data))
+            .then((data) => {
+                setAuto(data)
+                completeLoading()
+            })
     }, [id])
 
     useEffect(() => {
@@ -40,7 +46,7 @@ function Car() {
     }, [auto])
 
     if (!auto) {
-        return <p>Loading...</p>;
+        return null;
     }
 
     return (

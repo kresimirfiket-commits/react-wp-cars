@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CarSingle from '../components/CarSingle'
 import { useCars } from '../context/CarsContext'
+import { useLoading } from '../context/LoadingContext'
 import "../css_files/Catalog.css"
 
 function Catalog() {
-  const { pagedCars, loading, error } = useCars();
+  const { pagedCars, loading, error } = useCars()
+  const { startLoading, completeLoading } = useLoading()
 
-  if (loading) return <p>Loading...</p>;
+  useEffect(() => {
+    if (loading) startLoading()
+    else completeLoading()
+  }, [loading])
+
+  if (loading) return null;
   if (error) return <p>Error: {error}</p>;
 
   return (

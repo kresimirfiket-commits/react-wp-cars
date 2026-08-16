@@ -15,6 +15,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Car from "./pages/Car";
 
 import { CarsProvider } from "./context/CarsContext";
+import { LoadingProvider } from "./context/LoadingContext";
 
 import { ThemeProvider } from "./context/ThemeContext";
 
@@ -23,19 +24,21 @@ function App() {
     <>
       <ThemeProvider>
         <BrowserRouter>
-          <CarsProvider>
-            <Header />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/catalog" element={<Catalog />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <LoadingProvider>
+            <CarsProvider>
+              <Header />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/catalog" element={<Catalog />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacypolicy" element={<PrivacyPolicy />} />
 
-              <Route path="/car/:id" element={<Car />} />
-            </Routes>
-            <Footer />
-          </CarsProvider>
+                <Route path="/car/:id" element={<Car />} />
+              </Routes>
+              <Footer />
+            </CarsProvider>
+          </LoadingProvider>
         </BrowserRouter>
       </ThemeProvider>
     </>

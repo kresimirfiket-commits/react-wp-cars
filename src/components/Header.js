@@ -1,16 +1,44 @@
-import { useState, useEffect } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+import { useLoading } from '../context/LoadingContext'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router"
 import "../css_files/Header.css"
 import { useTheme } from '../context/ThemeContext'
 
 function Header() {
+    const { loadingBarRef } = useLoading()
     const { theme, toggleTheme } = useTheme()
     const [isUnseen, setIsUnseen] = useState(false)
+    const isMenuOpenref = useRef(false)
+    const navRef = useRef(null)
 
-    /* When the user scrolls up, hide the footer. When the user scrolls down, show the footer */
+    // track Bootstrap's collapse open/close state via its own events
+    useEffect(() => {
+        const navEl = navRef.current
+        if (!navEl) return
+
+        const handleShow = () => {
+            isMenuOpenref.current = true
+            setIsUnseen(false) // force header visible the moment menu opens
+        }
+        const handleHide = () => {
+            isMenuOpenref.current = false
+        }
+
+        navEl.addEventListener('show.bs.collapse', handleShow)
+        navEl.addEventListener('hidden.bs.collapse', handleHide)
+
+        return () => {
+            navEl.removeEventListener('show.bs.collapse', handleShow)
+            navEl.removeEventListener('hidden.bs.collapse', handleHide)
+        }
+    }, [])
+
+    // When the user scrolls down, hide the header. When the user scrolls up, show the header
     useEffect(() => {
         let prevScrollpos = window.pageYOffset;
         const handleScroll = () => {
+            if (isMenuOpenref.current) return // don't hide while mobile menu is open
             if (window.innerWidth > 768) {
                 setIsUnseen(false)
                 return
@@ -42,7 +70,7 @@ function Header() {
                     >
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse" id="navbarNav" ref={navRef}>
                         <ul className="navbar-nav ms-auto gap-lg-5">
                             <li className="nav-item">
                                 <Link className="nav-link" to="/">Home</Link>
@@ -71,6 +99,7 @@ function Header() {
                     </div>
                 </div>
             </nav>
+            <LoadingBar color='var(--green)' height={3} ref={loadingBarRef} containerClassName='header-loading-bar' shadow={false} />
         </header>
     )
 }

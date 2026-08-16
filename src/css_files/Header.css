@@ -11,6 +11,13 @@ header {
   transition: transform 0.5s;
 }
 
+.header-loading-bar {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 100% !important;
+}
+
 .navbar.navbar-expand-lg {
   padding: 0;
 }
