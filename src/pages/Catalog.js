@@ -11,7 +11,7 @@ function Catalog() {
   useEffect(() => {
     if (loading) startLoading()
     else completeLoading()
-  }, [loading])
+  }, [loading, startLoading, completeLoading])
 
   if (loading) return null;
   if (error) return <p>Error: {error}</p>;

@@ -1,12 +1,12 @@
-import { createContext, useContext, useRef } from "react";
+import { createContext, useContext, useRef, useCallback } from "react";
 
 const LoadingContext = createContext(null)
 
 export function LoadingProvider({ children }) {
     const loadingBarRef = useRef(null)
 
-    const startLoading = () => loadingBarRef.current?.continuousStart()
-    const completeLoading = () => loadingBarRef.current?.complete()
+    const startLoading = useCallback(() => loadingBarRef.current?.continuousStart(), [])
+    const completeLoading = useCallback(() => loadingBarRef.current?.complete(), [])
 
     const value = { loadingBarRef, startLoading, completeLoading }
 

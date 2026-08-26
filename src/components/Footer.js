@@ -102,7 +102,7 @@ function Footer() {
             <p><Link className='link' to="/privacypolicy">Privacy</Link></p>
           </div>
           <div className='col bottom'>
-            <p><a className='link' href="mailto:kresimir.fiket@kmf-plavi.hr">email</a></p>
+            <p><a className='link' href="mailto:admin@kmf-plavi.hr">email</a></p>
           </div>
         </div>
 
