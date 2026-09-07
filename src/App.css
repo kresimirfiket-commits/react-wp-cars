@@ -46,6 +46,7 @@
 
 body {
   margin: 0;
+  padding-bottom: 60px;
   background: var(--ink);
   color: var(--paper);
   font-family: "IBM Plex Sans", sans-serif;

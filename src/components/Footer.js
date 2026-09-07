@@ -21,7 +21,15 @@ function Footer() {
         return
       }
       const currentScrollPos = window.pageYOffset;
-      setIsHidden(prevScrollpos > currentScrollPos)
+
+      const atBottom = window.innerHeight + currentScrollPos >= document.documentElement.scrollHeight - 2
+      if (atBottom) {
+        setIsHidden(false)
+        prevScrollpos = currentScrollPos
+        return
+      }
+
+      setIsHidden(prevScrollpos < currentScrollPos)
       prevScrollpos = currentScrollPos
     }
     window.addEventListener("scroll", handleScroll)
@@ -32,7 +40,7 @@ function Footer() {
     if (pageCount <= 1) return null
 
     return (
-      <footer className={`d-flex justify-content-center py-4 ${isHidden ? 'hidden' : ""}`}>
+      <footer className='d-flex justify-content-center py-3'>
         <ReactPaginate
           previousLabel="← Prev"
           nextLabel="Next →"
@@ -60,7 +68,7 @@ function Footer() {
     const nextCar = index >= 0 && index < cars.length - 1 ? cars[index + 1] : cars[0]
 
     return (
-      <footer className={isHidden ? "hidden" : ""}>
+      <footer>
         <div className='container-fluid px-0 px-md-4 py-2 py-md-2'>
           <div className='row m-0'>
             <div className='col-4 d-flex justify-content-start text-start align-items-center'>
@@ -98,9 +106,9 @@ function Footer() {
           <div className='col bottom'>
             <p><Link className='link' to="/contact">Contact</Link></p>
           </div>
-          <div className='col bottom'>
+          {/*<div className='col bottom'>
             <p><Link className='link' to="/privacypolicy">Privacy</Link></p>
-          </div>
+          </div>*/}
           <div className='col bottom'>
             <p><a className='link' href="mailto:admin@kmf-plavi.hr">email</a></p>
           </div>

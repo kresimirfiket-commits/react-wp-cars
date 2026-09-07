@@ -73,7 +73,7 @@ function Contact() {
         <div className="divider"></div>
 
         <section className="form-section">
-          <p className="section-mono">Send a message</p>
+          <p className="section-mono-contact">Send a message</p>
           <div className="form-wrap">
             <form className="row" ref={formRef} onSubmit={handleSubmit}>
               <div className="col-md-6 field">
@@ -149,7 +149,7 @@ function Contact() {
         </section>
 
         <section className="expect">
-          <p className="section-mono">What to expect</p>
+          <p className="section-mono-contact">What to expect</p>
           <div className="row rule-row-contact">
             <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cell">Car suggestions</div>
             <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cell">

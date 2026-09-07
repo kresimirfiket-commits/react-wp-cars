@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router"
 import "../css_files/Header.css"
 import { useTheme } from '../context/ThemeContext'
+import { Collapse } from 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 function Header() {
     const { loadingBarRef } = useLoading()
@@ -11,6 +12,12 @@ function Header() {
     const [isUnseen, setIsUnseen] = useState(false)
     const isMenuOpenref = useRef(false)
     const navRef = useRef(null)
+    const closeMenuOnNavigate = () => {
+        if (!isMenuOpenref.current) return
+        const navEl = navRef.current
+        if (!navEl) return
+        Collapse.getOrCreateInstance(navEl).hide()
+    }
 
     // track Bootstrap's collapse open/close state via its own events
     useEffect(() => {
@@ -44,7 +51,14 @@ function Header() {
                 return
             }
             const currentScrollPos = window.pageYOffset;
-            setIsUnseen(prevScrollpos < currentScrollPos)
+
+            if (currentScrollPos <= 0) {
+                setIsUnseen(false)
+                prevScrollpos = currentScrollPos
+                return
+            }
+
+            setIsUnseen(prevScrollpos > currentScrollPos)
             prevScrollpos = currentScrollPos
         }
         window.addEventListener("scroll", handleScroll)
@@ -73,23 +87,25 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarNav" ref={navRef}>
                         <ul className="navbar-nav ms-auto gap-lg-5">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
+                                <Link className="nav-link" to="/" onClick={closeMenuOnNavigate}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/catalog"
-                                >Catalog</Link>
+                                <Link className="nav-link" to="/catalog" onClick={closeMenuOnNavigate}>Catalog</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about">About</Link>
+                                <Link className="nav-link" to="/about" onClick={closeMenuOnNavigate}>About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
+                                <Link className="nav-link" to="/contact" onClick={closeMenuOnNavigate}>Contact</Link>
                             </li>
                             <li className="nav-item">
                                 <button
                                     type="button"
                                     className="nav-link theme-toggle"
-                                    onClick={toggleTheme}
+                                    onClick={() => {
+                                        toggleTheme()
+                                        closeMenuOnNavigate()
+                                    }}
                                     aria-label="Toggle color theme"
                                 >
                                     {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}

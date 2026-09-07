@@ -1,7 +1,9 @@
 /* ---------- footer ---------- */
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -103,11 +105,15 @@ footer .pagination-1 .disabled a {
 /* ---------- class to hide footer ---------- */
 .hidden {
   transform: translateY(100%);
-  /*transition-duration: 0.5s;*/
+  transition-duration: 0.5s;
 }
 
 /* ---------- media query ---------- */
 @media (max-width: 576px) {
+  .bottom {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
   .bottom p {
     padding: 2px 2px;
     margin: 4px 2px;
