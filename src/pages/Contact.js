@@ -1,6 +1,8 @@
-import React, { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+import { useRef, useState } from 'react'
 import "../css_files/Contact.css"
+
+const CF7_FORM_ID = '1023'
+const CF7_ENDPOINT = `https://kmf-plavi.hr/backend/wp-json/contact-form-7/v1/contact-forms/${CF7_FORM_ID}/feedback`
 
 function Contact() {
   const formRef = useRef(null)
@@ -10,28 +12,42 @@ function Contact() {
     e.preventDefault()
 
     // honeypot: real users never fill this, bots often do
+    // fake success instead of a silent no-op, so a real visitor whose
+    // browser autofilled this hidden field isn't left thinking nothing happened.
     if (formRef.current.company.value) {
+      setStatus('success')
+      formRef.current.reset()
       return
     }
 
     setStatus('sending')
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formRef.current,
-      { publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY }
-    )
-      .then(() => {
-        setStatus('success')
-        formRef.current.reset()
+    const fd = new FormData(formRef.current)
+    // CF7's REST endpoint expects these internal fields, normally injected
+    // by its own on-page JS — required even though this form isn't on a WP page.
+    fd.append('_wpcf7', CF7_FORM_ID)
+    fd.append('_wpcf7_version', '6.1.7')
+    fd.append('_wpcf_locale', 'en_US')
+    fd.append('_wpcf7_unit_tag', `wpcf7-f&{CF7_FORM_ID}-o1`)
+    fd.append('_wpcf7_container_post', '0')
+
+    fetch(CF7_ENDPOINT, { method: 'POST', body: fd })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === 'mail_sent') {
+          setStatus('success')
+          formRef.current.reset()
+        } else {
+          console.error('CF7 error:', data)
+          setStatus('error')
+        }
       })
       .catch((err) => {
-        console.error('EmailJS error:', err)
+        console.error('CF7 request failed:', err)
         setStatus('error')
       })
-
   }
+
   return (
     <main className="contact">
       <div className="container-fluid page">
@@ -55,8 +71,8 @@ function Contact() {
         <div className="row justify-content-center channels">
           <div className="col-md-4 channel">
             <div className="channel-label">Email</div>
-            <div className="channel-value">hello@dailyfastfiles.com</div>
-            <p>Best for corrections, car suggestions, or anything specific.</p>
+            <div className="channel-value"><a className="link" href="mailto:admin@kmf-plavi.hr">admin@kmf-plavi.hr</a></div>
+            <p>Best for corrections, car suggestions, or anything specific. For direct replies it's better to use form.</p>
           </div>
           <div className="col-md-4 channel">
             <div className="channel-label">Based in</div>
@@ -77,7 +93,7 @@ function Contact() {
           <div className="form-wrap">
             <form className="row" ref={formRef} onSubmit={handleSubmit}>
               <div className="col-md-6 field">
-                <label for="name">Name</label>
+                <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -87,7 +103,7 @@ function Contact() {
                 />
               </div>
               <div className="col-md-6 field">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -98,7 +114,7 @@ function Contact() {
               </div>
 
               <div className="col-md-12 field full">
-                <label for="subject">Subject</label>
+                <label htmlFor="subject">Subject</label>
                 <input
                   type="text"
                   id="subject"
@@ -109,7 +125,7 @@ function Contact() {
               </div>
 
               <div className="col-md-12 field full">
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -120,7 +136,7 @@ function Contact() {
 
               {/* honeypot field, hidden from real users */}
               <div className='field-honeypot' aria-hidden='true'>
-                <label for='company'>Company</label>
+                <label htmlFor='company'>Company</label>
                 <input
                   type='text'
                   id='company'

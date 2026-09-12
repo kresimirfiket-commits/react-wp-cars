@@ -93,7 +93,7 @@ function Footer() {
   return (
     <footer className={isHidden ? 'hidden' : ""}>
       <div className='container-fluid px-0'>
-        <div className='row'>
+        <div className='row mx-0'>
           <div className='col bottom'>
             <p><Link className='link' to="/">Home</Link></p>
           </div>
@@ -106,12 +106,12 @@ function Footer() {
           <div className='col bottom'>
             <p><Link className='link' to="/contact">Contact</Link></p>
           </div>
-          {/*<div className='col bottom'>
-            <p><Link className='link' to="/privacypolicy">Privacy</Link></p>
-          </div>*/}
           <div className='col bottom'>
-            <p><a className='link' href="mailto:admin@kmf-plavi.hr">email</a></p>
+            <p><Link className='link' to="/privacypolicy">Privacy</Link></p>
           </div>
+          {/*<div className='col bottom'>
+            <p><a className='link' href="mailto:admin@kmf-plavi.hr">email</a></p>
+          </div>*/}
         </div>
 
       </div>

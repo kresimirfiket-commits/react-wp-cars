@@ -17,7 +17,7 @@ function Car() {
                 setAuto(data)
                 completeLoading()
             })
-    }, [id])
+    }, [id, startLoading, completeLoading])
 
     useEffect(() => {
         if (!auto) return

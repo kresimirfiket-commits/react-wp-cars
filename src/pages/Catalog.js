@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import CarSingle from '../components/CarSingle'
 import { useCars } from '../context/CarsContext'
 import { useLoading } from '../context/LoadingContext'

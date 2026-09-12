@@ -3,44 +3,44 @@ import "../css_files/Home.css"
 
 function Home() {
   return (
-    <main class="home">
-      <div class="container-fluid page-home">
+    <main className="home">
+      <div className="container-fluid page-home">
         <div
-          class="masthead d-flex align-items-baseline justify-content-between"
+          className="masthead d-flex align-items-baseline justify-content-between"
         >
-          <div class="blogname">Daily Fast Files</div>
-          <div class="filenum">Home</div>
+          <div className="blogname">Daily Fast Files</div>
+          <div className="filenum">Home</div>
         </div>
 
-        <div class="hero">
-          <p class="eyebrow">36 cars · production line · daily usable</p>
+        <div className="hero">
+          <p className="eyebrow">36 cars · production line · daily usable</p>
           <h1>Fast cars<br />nobody<span> notices.</span></h1>
-          <p class="hero-sub">
+          <p className="hero-sub">
             A reference for the cars that came off a regular assembly line, live
             in company car parks, and still run 0–100 in under five seconds.
           </p>
         </div>
 
-        <div class="row three-col">
-          <div class="col-md-4 pillar">
-            <div class="pillar-num">36</div>
-            <div class="pillar-label">Cars profiled</div>
+        <div className="row three-col">
+          <div className="col-md-4 pillar">
+            <div className="pillar-num">36</div>
+            <div className="pillar-label">Cars profiled</div>
             <p>
               Every car on this list is in current production. No classics, no
               concepts, no one-off specials.
             </p>
           </div>
-          <div class="col-md-4 pillar">
-            <div class="pillar-num">0</div>
-            <div class="pillar-label">Race cars</div>
+          <div className="col-md-4 pillar">
+            <div className="pillar-num">0</div>
+            <div className="pillar-label">Race cars</div>
             <p>
               None of these were built for a circuit. They were built for
               commutes, school runs, and motorways.
             </p>
           </div>
-          <div class="col-md-4 pillar">
-            <div class="pillar-num">1</div>
-            <div class="pillar-label">Rule</div>
+          <div className="col-md-4 pillar">
+            <div className="pillar-num">1</div>
+            <div className="pillar-label">Rule</div>
             <p>
               It must roll off the same line as the base model. No homologation
               runs, no special orders.
@@ -48,13 +48,13 @@ function Home() {
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-4 col-md-5 section-mono">
+        <div className="row">
+          <div className="col-4 col-md-5 section-mono">
             <p>The premise</p>
             <h2>Built fast.<br />Looks slow...<br />But only from distance.</h2>
           </div>
 
-          <div class="col-8 col-md-7 premise-body">
+          <div className="col-8 col-md-7 premise-body">
             <p>
               Most cars badged "performance" either wear it obviously — wide
               arches, air scoops, a wing — or carry a price tag that removes
@@ -76,9 +76,9 @@ function Home() {
           </div>
         </div>
 
-        <div class="divider"></div>
+        <div className="divider"></div>
 
-        <section class="how-built">
+        <section className="how-built">
           <p>How this was built</p>
           <p>
             Every page on this site was built as part of a front-end development
@@ -103,8 +103,8 @@ function Home() {
             >
           </p>
 
-          <div class="claude-note">
-            <div class="claude-label">About Claude</div>
+          <div className="claude-note">
+            <div className="claude-label">About Claude</div>
             <p>
               Claude is an AI assistant made by Anthropic. Every car profile on
               this site — the copy, the specs, the heritage sections, the
@@ -126,11 +126,11 @@ function Home() {
           </div>
         </section>
 
-        <div class="row align-items-center justify-content-between about-strip">
-          <div class="col-3 col-sm-2 monodiv">
-            <div class="monogram">KMF</div>
+        <div className="row align-items-center justify-content-between about-strip">
+          <div className="col-3 col-sm-2 monodiv">
+            <div className="monogram">KMF</div>
           </div>
-          <div class="col-9 col-sm-10 about-text">
+          <div className="col-9 col-sm-10 about-text">
             <p>
               <strong>Krešimir-Mirko Fiket : </strong> front - end developer and
               the person behind Daily Fast Files. This started as a side project
@@ -141,39 +141,39 @@ function Home() {
           </div>
         </div>
 
-        <div class="rules-home section-mono-home">
+        <div className="rules-home section-mono-home">
           <p>What qualifies</p>
-          <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell-home">Standard production line</div>
-            <div class="col-8 col-md-6 rule-cell-home">
+          <div className="row rule-row">
+            <div className="col-4 col-md-6 rule-cell-home">Standard production line</div>
+            <div className="col-8 col-md-6 rule-cell-home">
               Built on the same line as the base model, by the same workers, in
               the same factory.
             </div>
           </div>
-          <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell-home">No homologation</div>
-            <div class="col-8 col-md-6 rule-cell-home">
+          <div className="row rule-row">
+            <div className="col-4 col-md-6 rule-cell-home">No homologation</div>
+            <div className="col-8 col-md-6 rule-cell-home">
               Not a limited run built to satisfy a racing regulation. Regular
               production numbers only.
             </div>
           </div>
-          <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell-home">No special orders</div>
-            <div class="col-8 col-md-6 rule-cell-home">
+          <div className="row rule-row">
+            <div className="col-4 col-md-6 rule-cell-home">No special orders</div>
+            <div className="col-8 col-md-6 rule-cell-home">
               Available off the shelf from a main dealer, not configured per
               customer at the factory.
             </div>
           </div>
-          <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell-home">Daily usable</div>
-            <div class="col-8 col-md-6 rule-cell-home">
+          <div className="row rule-row">
+            <div className="col-4 col-md-6 rule-cell-home">Daily usable</div>
+            <div className="col-8 col-md-6 rule-cell-home">
               Full interior, real boot space, five seats where the base model
               has five seats.
             </div>
           </div>
-          <div class="row rule-row">
-            <div class="col-4 col-md-6 rule-cell-home">Currently manufactured</div>
-            <div class="col-8 col-md-6 rule-cell-home">
+          <div className="row rule-row">
+            <div className="col-4 col-md-6 rule-cell-home">Currently manufactured</div>
+            <div className="col-8 col-md-6 rule-cell-home">
               In production at the time of writing. No classics, no cars that
               have since been discontinued.
             </div>

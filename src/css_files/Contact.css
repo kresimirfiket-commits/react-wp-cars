@@ -114,7 +114,8 @@
       margin-bottom: 12px;
   }
 
-  .channel-value {
+  .channel-value a {
+      text-decoration: none;
       font-family: 'IBM Plex Mono', monospace;
       font-size: 16px;
       color: var(--amber);
@@ -224,6 +225,8 @@
 
   .field-honeypot {
       position: absolute;
+      left: -9999px;
+      top: -9999px;
       width: 1px;
       height: 1px;
       overflow: hidden;
