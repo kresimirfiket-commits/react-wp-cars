@@ -27,8 +27,8 @@ function Contact() {
     // by its own on-page JS — required even though this form isn't on a WP page.
     fd.append('_wpcf7', CF7_FORM_ID)
     fd.append('_wpcf7_version', '6.1.7')
-    fd.append('_wpcf_locale', 'en_US')
-    fd.append('_wpcf7_unit_tag', `wpcf7-f&{CF7_FORM_ID}-o1`)
+    fd.append('_wpcf7_locale', 'en_US')
+    fd.append('_wpcf7_unit_tag', `wpcf7-f${CF7_FORM_ID}-o1`)
     fd.append('_wpcf7_container_post', '0')
 
     fetch(CF7_ENDPOINT, { method: 'POST', body: fd })
@@ -54,7 +54,7 @@ function Contact() {
         <div
           className="masthead d-flex align-items-baseline justify-content-between"
         >
-          <div className="blogname">Daily Fast Files</div>
+          <div className="blogname">Fast Cars</div>
           <div className="filenum">Contact</div>
         </div>
 
@@ -97,7 +97,7 @@ function Contact() {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="your-name"
                   placeholder="Your name"
                   required
                 />
@@ -107,7 +107,7 @@ function Contact() {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="your-email"
                   placeholder="you@example.com"
                   required
                 />
@@ -118,7 +118,7 @@ function Contact() {
                 <input
                   type="text"
                   id="subject"
-                  name="subject"
+                  name="your-subject"
                   placeholder="Car suggestion, correction, general question…"
                   required
                 />
@@ -128,7 +128,7 @@ function Contact() {
                 <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
-                  name="message"
+                  name="your-message"
                   placeholder="Write your message here."
                   required
                 ></textarea>

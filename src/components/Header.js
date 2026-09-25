@@ -58,7 +58,7 @@ function Header() {
                 return
             }
 
-            setIsUnseen(prevScrollpos > currentScrollPos)
+            setIsUnseen(currentScrollPos > prevScrollpos) // hide when scrolling down
             prevScrollpos = currentScrollPos
         }
         window.addEventListener("scroll", handleScroll)
@@ -67,7 +67,7 @@ function Header() {
 
     return (
         <header className={isUnseen ? 'unseen' : ""}>
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-md">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-car-front-fill" viewBox="0 0 16 16">
@@ -97,6 +97,9 @@ function Header() {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact" onClick={closeMenuOnNavigate}>Contact</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/register" onClick={closeMenuOnNavigate}>Register</Link>
                             </li>
                             <li className="nav-item">
                                 <button

@@ -1,20 +1,22 @@
-import React from 'react'
-import "../css_files/Home.css"
+import React from "react";
+import "../css_files/Home.css";
 
 function Home() {
   return (
     <main className="home">
-      <div className="container-fluid page-home">
-        <div
-          className="masthead d-flex align-items-baseline justify-content-between"
-        >
-          <div className="blogname">Daily Fast Files</div>
+      <div className="container-fluid page">
+        <div className="masthead d-flex align-items-baseline justify-content-between">
+          <div className="blogname">Fast Cars</div>
           <div className="filenum">Home</div>
         </div>
 
         <div className="hero">
           <p className="eyebrow">36 cars · production line · daily usable</p>
-          <h1>Fast cars<br />nobody<span> notices.</span></h1>
+          <h1>
+            Fast cars
+            <br />
+            nobody<span> notices.</span>
+          </h1>
           <p className="hero-sub">
             A reference for the cars that came off a regular assembly line, live
             in company car parks, and still run 0–100 in under five seconds.
@@ -51,7 +53,13 @@ function Home() {
         <div className="row">
           <div className="col-4 col-md-5 section-mono">
             <p>The premise</p>
-            <h2>Built fast.<br />Looks slow...<br />But only from distance.</h2>
+            <h2>
+              Built fast.
+              <br />
+              Looks slow...
+              <br />
+              But only from distance.
+            </h2>
           </div>
 
           <div className="col-8 col-md-7 premise-body">
@@ -93,14 +101,14 @@ function Home() {
             clean pages out. The full story is on the About page.
           </p>
           <p>
-            <strong
-            >The profiles on this site are for reference only. Every car here
+            <strong>
+              The profiles on this site are for reference only. Every car here
               has been researched to the best of our ability, but
               specifications, availability, and production status change. Before
               purchasing any vehicle, verify current specs and pricing directly
               with the manufacturer or an authorised dealer — and drive it
-              yourself.</strong
-            >
+              yourself.
+            </strong>
           </p>
 
           <div className="claude-note">
@@ -144,7 +152,9 @@ function Home() {
         <div className="rules-home section-mono-home">
           <p>What qualifies</p>
           <div className="row rule-row">
-            <div className="col-4 col-md-6 rule-cell-home">Standard production line</div>
+            <div className="col-4 col-md-6 rule-cell-home">
+              Standard production line
+            </div>
             <div className="col-8 col-md-6 rule-cell-home">
               Built on the same line as the base model, by the same workers, in
               the same factory.
@@ -158,7 +168,9 @@ function Home() {
             </div>
           </div>
           <div className="row rule-row">
-            <div className="col-4 col-md-6 rule-cell-home">No special orders</div>
+            <div className="col-4 col-md-6 rule-cell-home">
+              No special orders
+            </div>
             <div className="col-8 col-md-6 rule-cell-home">
               Available off the shelf from a main dealer, not configured per
               customer at the factory.
@@ -172,7 +184,9 @@ function Home() {
             </div>
           </div>
           <div className="row rule-row">
-            <div className="col-4 col-md-6 rule-cell-home">Currently manufactured</div>
+            <div className="col-4 col-md-6 rule-cell-home">
+              Currently manufactured
+            </div>
             <div className="col-8 col-md-6 rule-cell-home">
               In production at the time of writing. No classics, no cars that
               have since been discontinued.
@@ -181,7 +195,7 @@ function Home() {
         </div>
       </div>
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;

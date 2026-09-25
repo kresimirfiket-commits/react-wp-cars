@@ -4,9 +4,8 @@
       margin-right: auto;
   }
 
-  /*.page {
-      margin: 0 auto;
-      padding: 56px 0 0;
+  /*.page-contact {
+      padding: 0;
   }*/
 
   .masthead {
@@ -72,9 +71,9 @@
       margin-bottom: 32px;
   }
 
-  .hero h1 span {
+  /*.hero h1 span {
       color: var(--green);
-  }
+  }*/
 
   .hero-sub {
       font-size: 18px;
@@ -278,9 +277,9 @@
   }
 
   @media (max-width: 992px) {
-      .page {
+      /*.page-contact {
           padding: 0;
-      }
+      }*/
 
       .masthead {
           margin-bottom: 32px;

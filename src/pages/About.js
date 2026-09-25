@@ -4,11 +4,11 @@ import "../css_files/About.css"
 function About() {
   return (
     <main className="about">
-      <div className="container-fluid page-about">
+      <div className="container-fluid page">
         <div
           className="masthead d-flex align-items-baseline justify-content-between"
         >
-          <div className="blogname">Daily Fast Files</div>
+          <div className="blogname">Fast Cars</div>
           <div className="filenum">About</div>
         </div>
 

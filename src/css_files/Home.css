@@ -6,9 +6,8 @@ main.home {
 }
 
 /*.page-home {
-      margin: 0 auto;
-      padding: 56px 0 80px;
-  }*/
+  padding: 0;
+}*/
 
 .masthead {
   /*display: flex;
@@ -57,9 +56,9 @@ main.home {
   margin-bottom: 32px;
 }
 
-.hero h1 span {
+/*.hero h1 span {
   color: var(--green);
-}
+}*/
 
 .hero-sub {
   font-size: 18px;
@@ -174,7 +173,7 @@ main.home {
 }
 
 .how-built p:first-child {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
 }
 
@@ -202,9 +201,9 @@ main.home {
 }
 
 .claude-label {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--green);
   margin-bottom: 14px;
@@ -321,7 +320,7 @@ main.home {
   }
 
   /*.page-home {
-    padding: 0 0 30px;
+    padding: 0;
   }*/
 
   .hero {
@@ -353,10 +352,6 @@ main.home {
 
   .how-built p {
     line-height: 1.4;
-  }
-
-  .rules-home {
-    margin-bottom: 56px;
   }
 }
 

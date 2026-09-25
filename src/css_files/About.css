@@ -5,8 +5,7 @@
   }
 
   /*.page-about {
-      margin: 0 auto;
-      padding: 56px 0 80px;
+      padding: 0;
   }*/
 
   .masthead {
@@ -72,9 +71,9 @@
       margin-bottom: 32px;
   }
 
-  .hero h1 span {
+  /*.hero h1 span {
       color: var(--green);
-  }
+  }*/
 
   .hero-sub {
       font-size: 18px;
@@ -416,9 +415,9 @@
           border-bottom: none;
       }
 
-      .page-about {
+      /*.page-about {
           padding: 0;
-      }
+      }*/
 
       .masthead {
           margin-bottom: 32px;

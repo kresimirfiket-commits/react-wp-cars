@@ -29,7 +29,7 @@ function Footer() {
         return
       }
 
-      setIsHidden(prevScrollpos < currentScrollPos)
+      setIsHidden(currentScrollPos < prevScrollpos) // hide when scrolling up
       prevScrollpos = currentScrollPos
     }
     window.addEventListener("scroll", handleScroll)

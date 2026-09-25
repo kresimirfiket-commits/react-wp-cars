@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Catalog from './pages/Catalog';
 import About from "./pages/About";
 import Contact from "./pages/Contact"
+import Register from "./pages/Register";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Car from "./pages/Car";
 
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/privacypolicy" element={<PrivacyPolicy />} />
 
                 <Route path="/car/:id" element={<Car />} />

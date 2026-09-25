@@ -53,6 +53,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.hero h1 span {
+  color: var(--green);
+}
+
 /* ---------- Catalog.js ---------- */
 .catalog-link {
   text-decoration: none;
@@ -74,6 +78,12 @@ body {
 @media (max-width: 1400px) {
   .car-wrap {
     width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .page {
+    padding: 0;
   }
 }
 

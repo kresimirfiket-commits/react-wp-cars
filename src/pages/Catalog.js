@@ -18,7 +18,7 @@ function Catalog() {
 
   return (
     <main>
-      <div className='container-fluid'>
+      <div className='container-fluid frame'>
         {pagedCars.map(car => (
           <CarSingle key={car.id} post={car} />
         ))}
