@@ -98,7 +98,7 @@ function Header() {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact" onClick={closeMenuOnNavigate}>Contact</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item register">
                                 <Link className="nav-link" to="/register" onClick={closeMenuOnNavigate}>Register</Link>
                             </li>
                             <li className="nav-item">

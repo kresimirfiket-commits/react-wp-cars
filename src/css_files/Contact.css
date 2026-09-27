@@ -235,7 +235,7 @@
 
   /* expect */
   .expect {
-      margin-bottom: 56px;
+      margin-bottom: 50px;
   }
 
   .rule-row-contact {
@@ -249,14 +249,14 @@
       border-bottom: 1px solid var(--line);
   }
 
-  .rule-cell {
+  .rule-cel-contactl {
       padding: 20px 0;
       font-size: 15px;
       line-height: 1.5;
       color: var(--paper);
   }
 
-  .rule-cell:first-child {
+  .rule-cel-contactl:first-child {
       border-right: 1px solid var(--line);
       padding-right: 24px;
       font-family: 'IBM Plex Mono', monospace;
@@ -264,7 +264,7 @@
       color: var(--amber);
   }
 
-  .rule-cell:last-child {
+  .rule-cel-contactl:last-child {
       padding-left: 24px;
       color: var(--muted);
       font-size: 14px;
@@ -300,10 +300,6 @@
       .form-section {
           margin-bottom: 50px;
       }
-
-      /*.expect {
-          margin-bottom: 56px;
-      }*/
   }
 
   @media (max-width: 768px) {

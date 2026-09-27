@@ -31,7 +31,6 @@ header {
   height: 25px;
 }
 
-
 svg {
   fill: var(--green-deep);
   width: 30px;
@@ -58,7 +57,7 @@ svg:hover {
   background-color: var(--green-deep);
 }
 
-/* ---------- class to hide footer ---------- */
+/* ---------- class to hide header ---------- */
 .unseen {
   transform: translateY(-100%);
   /*transition-duration: 0.5s;*/
@@ -69,5 +68,23 @@ svg:hover {
   .navbar-toggler-icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-item.register {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--green-deep);
+    border-radius: 8px;
+  }
+
+  .nav-item.register .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .register:hover {
+    border-color: var(--green);
   }
 }

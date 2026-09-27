@@ -30,7 +30,7 @@ function About() {
             <div className="col-0 col-lg-2 d-flex justify-content-center">
               <div className="monogram-large">KMF</div>
             </div>
-            <div className="col-12 col-lg-10">
+            <div className="col-12 col-lg-10 px-0">
               <div className="person-body">
                 <h2>Krešimir-Mirko Fiket</h2>
                 <p className="person-role">

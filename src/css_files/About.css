@@ -314,7 +314,7 @@
       border: 1px solid var(--line);
       border-radius: 4px;
       padding: 40px;
-      margin-bottom: 56px;
+      margin-bottom: 50px;
   }
 
   .how-built-about h2 {
@@ -449,7 +449,8 @@
       }
 
       .how-built-about {
-          padding: 12px;
+          padding-left: 12px;
+          padding-right: 12px;
           /*margin-bottom: 56px;*/
       }
   }

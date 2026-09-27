@@ -167,22 +167,22 @@ function Contact() {
         <section className="expect">
           <p className="section-mono-contact">What to expect</p>
           <div className="row rule-row-contact">
-            <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cell">Car suggestions</div>
-            <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cell">
+            <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cel-contactl">Car suggestions</div>
+            <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cel-contactl">
               If it fits the rules on the About page — standard production, no
               homologation, daily usable — it goes on the shortlist.
             </div>
           </div>
           <div className="row rule-row-contact">
-            <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cell">Corrections</div>
-            <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cell">
+            <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cel-contactl">Corrections</div>
+            <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cel-contactl">
               Specs change and mistakes happen. Point to the car and the field,
               and it gets checked against the source.
             </div>
           </div>
           <div className="row rule-row-contact">
-            <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cell">Technical questions</div>
-            <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cell">
+            <div className="col-3 col-sm-4 col-md-5 col-xxl-6 rule-cel-contactl">Technical questions</div>
+            <div className="col-9 col-sm-8 col-md-7 col-xxl-6 rule-cel-contactl">
               Happy to talk through the WordPress/React setup, the ACF field
               structure, or the import pipeline.
             </div>

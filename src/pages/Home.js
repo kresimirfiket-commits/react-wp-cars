@@ -23,26 +23,26 @@ function Home() {
           </p>
         </div>
 
-        <div className="row three-col">
-          <div className="col-md-4 pillar">
-            <div className="pillar-num">36</div>
-            <div className="pillar-label">Cars profiled</div>
+        <div className="row three-col-home">
+          <div className="col-md-4 pillar-home">
+            <div className="pillar-num-home">36</div>
+            <div className="pillar-label-home">Cars profiled</div>
             <p>
               Every car on this list is in current production. No classics, no
               concepts, no one-off specials.
             </p>
           </div>
-          <div className="col-md-4 pillar">
-            <div className="pillar-num">0</div>
-            <div className="pillar-label">Race cars</div>
+          <div className="col-md-4 pillar-home">
+            <div className="pillar-num-home">0</div>
+            <div className="pillar-label-home">Race cars</div>
             <p>
               None of these were built for a circuit. They were built for
               commutes, school runs, and motorways.
             </p>
           </div>
-          <div className="col-md-4 pillar">
-            <div className="pillar-num">1</div>
-            <div className="pillar-label">Rule</div>
+          <div className="col-md-4 pillar-home">
+            <div className="pillar-num-home">1</div>
+            <div className="pillar-label-home">Rule</div>
             <p>
               It must roll off the same line as the base model. No homologation
               runs, no special orders.
@@ -151,7 +151,7 @@ function Home() {
 
         <div className="rules-home section-mono-home">
           <p>What qualifies</p>
-          <div className="row rule-row">
+          <div className="row rule-row-home">
             <div className="col-4 col-md-6 rule-cell-home">
               Standard production line
             </div>
@@ -160,14 +160,14 @@ function Home() {
               the same factory.
             </div>
           </div>
-          <div className="row rule-row">
+          <div className="row rule-row-home">
             <div className="col-4 col-md-6 rule-cell-home">No homologation</div>
             <div className="col-8 col-md-6 rule-cell-home">
               Not a limited run built to satisfy a racing regulation. Regular
               production numbers only.
             </div>
           </div>
-          <div className="row rule-row">
+          <div className="row rule-row-home">
             <div className="col-4 col-md-6 rule-cell-home">
               No special orders
             </div>
@@ -176,14 +176,14 @@ function Home() {
               customer at the factory.
             </div>
           </div>
-          <div className="row rule-row">
+          <div className="row rule-row-home">
             <div className="col-4 col-md-6 rule-cell-home">Daily usable</div>
             <div className="col-8 col-md-6 rule-cell-home">
               Full interior, real boot space, five seats where the base model
               has five seats.
             </div>
           </div>
-          <div className="row rule-row">
+          <div className="row rule-row-home">
             <div className="col-4 col-md-6 rule-cell-home">
               Currently manufactured
             </div>

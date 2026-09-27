@@ -67,7 +67,7 @@ main.home {
   /*max-width: 560px;*/
 }
 
-.three-col {
+.three-col-home {
   /*display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;*/
@@ -76,17 +76,17 @@ main.home {
   margin: 0 0 80px 0;
 }
 
-.pillar {
+.pillar-home {
   /*background: var(--ink);*/
   padding: 28px 24px;
   border-right: 1px solid var(--line);
 }
 
-.pillar:nth-child(3) {
+.pillar-home:nth-child(3) {
   border-right: none;
 }
 
-.pillar-num {
+.pillar-num-home {
   font-family: "IBM Plex Mono", monospace;
   font-size: 32px;
   font-weight: 600;
@@ -95,7 +95,7 @@ main.home {
   line-height: 1;
 }
 
-.pillar-label {
+.pillar-label-home {
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -104,7 +104,7 @@ main.home {
   margin-bottom: 12px;
 }
 
-.pillar p {
+.pillar-home p {
   font-size: 14px;
   line-height: 1.6;
   color: var(--paper);
@@ -130,11 +130,7 @@ main.home {
 }
 
 .premise-body {
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;*/
-  margin-bottom: 80px;
-  /*align-items: start;*/
+  margin-bottom: 50px;
 }
 
 .premise-body p {
@@ -257,10 +253,10 @@ main.home {
 }
 
 .rules-home {
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
-.rule-row {
+.rule-row-home {
   /*display: grid;
   grid-template-columns: 1fr 1fr;*/
   border-bottom: 1px solid var(--line);
@@ -269,7 +265,7 @@ main.home {
   margin: 0;
 }
 
-.rule-row:nth-child(2) {
+.rule-row-home:nth-child(2) {
   border-top: 1px solid var(--line);
 }
 
@@ -327,12 +323,12 @@ main.home {
     margin-bottom: 50px;
   }
 
-  .three-col {
+  .three-col-home {
     margin-bottom: 50px;
   }
 
   .premise-body {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .premise-body p {
@@ -356,11 +352,11 @@ main.home {
 }
 
 @media (max-width: 768px) {
-  .three-col {
+  .three-col-home {
     border-top: none;
   }
 
-  .pillar {
+  .pillar-home {
     padding: 18px 24px 15px;
     border-top: 1px solid var(--line);
     border-right: none;
