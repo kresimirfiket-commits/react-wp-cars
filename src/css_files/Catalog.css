@@ -1,17 +1,17 @@
-main {
+/*main {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 @media (max-width: 1400px) {
   header {
     width: 95%;
   }
 
-  main {
+  /*main {
     width: 95%;
-  }
+  }*/
 
   footer {
     width: 95%;
@@ -21,10 +21,6 @@ main {
 @media (max-width: 992px) {
   header {
     width: 100%;
-  }
-
-  .frame {
-    padding: 0;
   }
 
   footer {

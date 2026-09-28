@@ -34,19 +34,19 @@ function PrivacyPolicy() {
           <h2>Who is responsible for your data</h2>
           <p>The data controller for this website is:</p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Name</div>
               <div class="col-12 col-md-10 ul-div-2">Krešimir-Mirko Fiket</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Location</div>
               <div class="col-12 col-md-10 ul-div-2">Zagreb, Croatia</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Email</div>
               <div class="col-12 col-md-10 ul-div-2">blue.taxizagreb@yahoo.com</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Website</div>
               <div class="col-12 col-md-10 ul-div-2">kmf-plavi.hr</div>
             </li>
@@ -63,20 +63,20 @@ function PrivacyPolicy() {
             and no e-commerce.
           </p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Server logs</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Your IP address, browser type, referring page, and time of visit are automatically logged by the web hosting provider (standard for any
                 website). These logs are used for security and uptime monitoring only and are not shared.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Cookies</div>
               <div class="col-12 col-md-10 ul-div-2">
                 This site will use cookies. Cookie implementation is in progress — see the Cookies section below for current status and planned usage.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Images</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Car photos are hosted on kmf-plavi.hr and served from our own server. Each image is credited to its original photographer on Unsplash or Pexels.
@@ -86,11 +86,11 @@ function PrivacyPolicy() {
           </ul>
           <p>If you choose to register for future updates, the following additional data is collected:</p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Username</div>
               <div class="col-12 col-md-10 ul-div-2">A display name chosen by you at registration. Used to identify your account.</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Email address</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Used to send you notifications when the car database is updated (once or twice per year). Not used for any other purpose.
@@ -114,11 +114,11 @@ function PrivacyPolicy() {
           </p>
           <p>When implemented, cookies on this site are expected to fall into the following categories:</p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Essential</div>
               <div class="col-12 col-md-10 ul-div-2">Required for the site to function correctly. These cannot be disabled.</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Analytics</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Used to understand how visitors use the site (pages visited, time on site). No personally identifiable information is stored. Consent will be
@@ -138,28 +138,28 @@ function PrivacyPolicy() {
           <h2>Why we process your data (legal basis)</h2>
           <p>Under GDPR, personal data can only be processed with a legal justification. For this site:</p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Server logs</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Legitimate interest — necessary to operate and secure the website. Logs are retained for the minimum period required by the hosting provider and
                 are not used for profiling.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Analytics cookies</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Consent — if and when analytics cookies are implemented, they will only activate after you explicitly agree. You can withdraw consent at any
                 time.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Registration data</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Consent — by registering, you explicitly agree to your username and email being stored so we can deliver the update notifications you
                 signed up for. You can withdraw consent and delete your account at any time.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Update emails</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Performance of a contract — sending update notifications is the service you registered for. Emails are sent from admin@kmf-plavi.hr using our
@@ -178,35 +178,35 @@ function PrivacyPolicy() {
             involved in the site's operation:
           </p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Hosting provider</div>
               <div class="col-12 col-md-10 ul-div-2">
                 The site is hosted on a third-party server. Standard server logs (IP address, access time, browser) are retained by the hosting provider
                 according to their own data retention policies.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">WordPress REST API</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Car content is served from a WordPress installation at kmf-plavi.hr. No visitor data is passed to or stored by WordPress during a standard page
                 visit.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Unsplash / Pexels</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Car photos are credited to photographers on Unsplash and Pexels, but images are hosted locally on kmf-plavi.hr. Visiting this site does not
                 trigger requests to Unsplash or Pexels servers.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Email — update notifications</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Update notification emails are sent directly from our own server using admin@kmf-plavi.hr. Your email address is not shared with any third-party
                 email marketing service. All email infrastructure is self-hosted.
               </div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Google Fonts</div>
               <div class="col-12 col-md-10 ul-div-2">
                 This site loads fonts from Google Fonts. This causes your browser to make a request to Google's servers, which may log your IP address. See
@@ -261,15 +261,15 @@ function PrivacyPolicy() {
           <h2>Data retention</h2>
           <p>We do not store personal data beyond what is necessary for the purposes described above.</p>
           <ul>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Server logs</div>
               <div class="col-12 col-md-10 ul-div-2">Retained for the minimum period required by the hosting provider.</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Analytics data</div>
               <div class="col-12 col-md-10 ul-div-2">If analytics cookies are implemented, aggregated data will be retained for no longer than 26 months.</div>
             </li>
-            <li class="row mx-0">
+            <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Registered user accounts</div>
               <div class="col-12 col-md-10 ul-div-2">
                 Username and email address are retained until you delete your account or unsubscribe from updates. You can request deletion at

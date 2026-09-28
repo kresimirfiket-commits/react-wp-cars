@@ -1,8 +1,8 @@
-  main.contact {
+  /*main.contact {
       width: 85%;
       margin-left: auto;
       margin-right: auto;
-  }
+  }*/
 
   /*.page-contact {
       padding: 0;
@@ -270,11 +270,11 @@
       font-size: 14px;
   }
 
-  @media (max-width: 1400px) {
+  /*@media (max-width: 1400px) {
       main.contact {
           width: 95%;
       }
-  }
+  }*/
 
   @media (max-width: 992px) {
       /*.page-contact {

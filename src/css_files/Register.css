@@ -1,8 +1,8 @@
-main.register {
+/*main.register {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 /*.page-register {
   padding: 0;
 }*/
@@ -292,11 +292,11 @@ main.register {
   text-decoration: underline;
 }
 
-@media (max-width: 1400px) {
+/*@media (max-width: 1400px) {
   main.register {
     width: 95%;
   }
-}
+}*/
 
 @media (max-width: 992px) {
   .form-note {

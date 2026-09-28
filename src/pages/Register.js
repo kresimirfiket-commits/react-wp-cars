@@ -23,7 +23,7 @@ function Register() {
           </p>
         </section>
 
-        <div class="row three-col mx-0">
+        <div class="row three-col">
           <div class="col-lg-4 pillar">
             <div class="pillar-num">2</div>
             <div class="pillar-label">Emails a year</div>
@@ -78,17 +78,17 @@ function Register() {
 
         <section class="expect">
           <p class="section-mono">What happens next</p>
-          <div class="row rule-row mx-0">
+          <div class="row rule-row">
             <div class="col-12 col-md-6 rule-cell">Confirmation</div>
             <div class="col-12 col-md-6 rule-cell">A short email lands in your inbox confirming you're on the list. Nothing else to set up.</div>
           </div>
-          <div class="row rule-row mx-0">
+          <div class="row rule-row">
             <div class="col-12 col-md-6 rule-cell">Updates</div>
             <div class="col-12 col-md-6 rule-cell">
               When a new car profile goes live, you get one email with a link to it. No digests, no roundups, no filler.
             </div>
           </div>
-          <div class="row rule-row mx-0">
+          <div class="row rule-row">
             <div class="col-12 col-md-6 rule-cell">Your data</div>
             <div class="col-12 col-md-6 rule-cell">
               Just a username and an email, kept until you unsubscribe or ask for deletion. Full detail on the

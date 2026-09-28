@@ -1,8 +1,8 @@
-  main.about {
+  /*main.about {
       width: 85%;
       margin-left: auto;
       margin-right: auto;
-  }
+  }*/
 
   /*.page-about {
       padding: 0;
@@ -387,11 +387,11 @@
       margin-bottom: 0;
   }
 
-  @media (max-width: 1400px) {
+  /*@media (max-width: 1400px) {
       main.about {
           width: 95%;
       }
-  }
+  }*/
 
   @media (max-width: 992px) {
       .monogram-large {

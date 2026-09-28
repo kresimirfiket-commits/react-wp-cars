@@ -1,8 +1,8 @@
-main.privacy {
+/*main.privacy {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 /*.page-privacy {
   padding: 0;
 }*/
@@ -210,11 +210,11 @@ main.privacy {
   }
 }*/
 
-@media (max-width: 1400px) {
+/*@media (max-width: 1400px) {
   main.privacy {
     width: 95%;
   }
-}
+}*/
 
 @media (max-width: 1200px) {
   .policy-section .ul-div-2 {

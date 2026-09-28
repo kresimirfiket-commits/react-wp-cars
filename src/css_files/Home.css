@@ -1,9 +1,8 @@
-main.home {
+/*main.home {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  /*padding: 0 0 50px;*/
-}
+}*/
 
 /*.page-home {
   padding: 0;
@@ -297,9 +296,9 @@ main.home {
 }*/
 
 @media (max-width: 1400px) {
-  main.home {
+  /*main.home {
     width: 95%;
-  }
+  }*/
 
   .monogram {
     margin: 0 10px 0 0;
@@ -311,9 +310,9 @@ main.home {
 }
 
 @media (max-width: 992px) {
-  main.home {
+  /*main.home {
     padding-bottom: 0;
-  }
+  }*/
 
   /*.page-home {
     padding: 0;
