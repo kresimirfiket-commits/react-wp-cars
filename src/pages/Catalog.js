@@ -17,7 +17,7 @@ function Catalog() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <main>
+    <main className='main-catalog'>
       <div className='container-fluid frame'>
         {pagedCars.map(car => (
           <CarSingle key={car.id} post={car} />
