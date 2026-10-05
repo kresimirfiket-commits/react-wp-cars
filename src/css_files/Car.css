@@ -125,9 +125,11 @@ h1 {
   margin-bottom: 42px;
 }
 .badge {
+  white-space: normal;
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   letter-spacing: 0.03em;
+  line-height: 1.2;
   color: var(--green);
   border: 1px solid var(--green-deep);
   border-radius: 999px;
