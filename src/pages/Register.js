@@ -1,5 +1,6 @@
 import React from "react";
-import "../css_files/Register.css"
+import { Link } from "react-router";
+import "../css_files/Register.css";
 
 function Register() {
   return (
@@ -61,8 +62,7 @@ function Register() {
               <div class="consent-row">
                 <input type="checkbox" id="consent" name="consent" required />
                 <label for="consent">
-                  I agree to receive update emails when new cars are added, and I've read the
-                  <a href="daily-fast-files-privacy.html">Privacy Policy</a>.
+                  I agree to receive update emails when new cars are added, and I've read the <Link to='/privacypolicy'>Privacy Policy</Link>.
                 </label>
               </div>
 
@@ -91,14 +91,14 @@ function Register() {
           <div class="row rule-row">
             <div class="col-12 col-md-6 rule-cell">Your data</div>
             <div class="col-12 col-md-6 rule-cell">
-              Just a username and an email, kept until you unsubscribe or ask for deletion. Full detail on the
-              <a href="daily-fast-files-privacy.html">Privacy Policy</a>.
+              Just a username and an email, kept until you unsubscribe or ask for deletion. Full detail on the{" "}
+              <Link to='/privacypolicy'>Privacy Policy</Link>.
             </div>
           </div>
         </section>
 
         <p class="foot-link">
-          Already registered, or changed your mind? See the <a href="daily-fast-files-privacy.html">Privacy Policy</a> for how to unsubscribe or delete your
+          Already registered, or changed your mind? See the <Link to='/privacypolicy'>Privacy Policy</Link> for how to unsubscribe or delete your
           account.
         </p>
       </div>

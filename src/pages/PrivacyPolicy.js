@@ -44,7 +44,7 @@ function PrivacyPolicy() {
             </li>
             <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Email</div>
-              <div class="col-12 col-md-10 ul-div-2">blue.taxizagreb@yahoo.com</div>
+              <div class="col-12 col-md-10 ul-div-2">admin@kmf-plavi.hr</div>
             </li>
             <li class="row">
               <div class="col-12 col-md-2 ul-div-1">Website</div>
@@ -300,7 +300,7 @@ function PrivacyPolicy() {
               <strong>Krešimir-Mirko Fiket</strong>
               <br />
               Email:
-              <a href="mailto:blue.taxizagreb@yahoo.com"> blue.taxizagreb@yahoo.com</a>
+              <a href="mailto:admin@kmf-plavi.hr"> admin@kmf-plavi.hr</a>
               <br />
               Zagreb, Croatia
             </p>
