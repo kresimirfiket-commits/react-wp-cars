@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import { useParams } from "react-router"
 import { useLoading } from "../context/LoadingContext"
+import { WP_API } from "../config"
 import "../css_files/Car.css"
 
 function Car() {
@@ -11,7 +12,7 @@ function Car() {
 
     useEffect(() => {
         startLoading()
-        fetch('https://kmf-plavi.hr/backend/wp-json/wp/v2/posts/' + id)
+        fetch(`${WP_API}/wp/v2/posts/${id}`)
             .then((output) => output.json())
             .then((data) => {
                 setAuto(data)
